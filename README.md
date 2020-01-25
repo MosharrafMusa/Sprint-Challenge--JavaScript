@@ -29,14 +29,38 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+Ans:
+Both methods modify each element in the array, however...
+.forEach does not create new array, it mutates the array that was passed through as an arguement. 
+.map returns a brand new array of the same size without changing the original array.
 
 2. What is the difference between a function and a method?
+Ans:
+ A function is a piece of code or program that returns value, data, objects when called by its name.
+ Method is also function that is associated with an object and therefore have features that relate to the object.
+
 
 3. What is closure?
+Ans:
+Closure is a way to capture information to be used later outside of its scope.
+It is the process in which a child function inherits from its parent function.
+CLosures allow us to access to an outter function scope and is 'nested' inside of another function. 
 
 4. Describe the four rules of the 'this' keyword.
+Ans:
+window/global object binding - when this is declared outside of an object or a constructor, "this" will refer to the window/console object.
+
+Implicit binding - You can call this inside of a object and it will refer to the object. using dot notation along with this will allow you to access the object "this" is delcared in and its properties.
+
+New binding - When "this" is used inside of a constructor function, "this" will refer to the property of the object that will be created via new keyword. 
+
+Explicit binding - "this" inside of a call or apply method call will directly refer to the object that the constructor function is suppose to construct. 
 
 5. Why do we need super() in an extended class?
+Ans:
+The super() in an extended class exists to call the "parent"/constructor class so that the object can inherit it's attributes.
+To inherit the attributes of the parent class.
+
 
 ## Project Set up
 
